@@ -2,17 +2,46 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 1.6em;
-    color: #2A2626;
+    color: #42413c;
+    width: 1440px;
+    height: 914px;
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    content: "";
+    
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    background-color: #f4f5f0;
 }
 
 h1,
 h2,
 h3 {
     line-height: 1.2em;
+    font-family: "Neucha";
 }
 
 h1 {
     font-size: 72px;
+    font-weight: 400;
 }
 
 h2 {
@@ -26,6 +55,58 @@ h3 {
 section {
     max-width: 1110px;
     text-align: center;
-    margin: 100px 0;
-    margin: 0 auto;
+    padding: 100px;
 }
+
+.container {
+    position: relative;
+    padding: 100px 165px;
+}
+
+.image-and-title_header {
+    display: flex;
+    position: relative;
+    padding-bottom: 175px;
+}
+
+.header-title {
+    margin: 0;
+}
+
+.main-image_header {
+    position: absolute;
+    height: 525px;
+    top: -55px;
+    right: -270px;
+    z-index: -1;
+}
+
+.header_block-text {
+    display: flex;
+    gap: 30px;
+}
+
+p {
+    margin: 0;
+    margin-top: 15px;
+    width: 540px;
+}
+
+.button-hd {
+    background-color: #fe8a02;
+    padding: 12px 24px;
+    width: 100px;
+    margin-left: 570px;
+    margin-top: 40px;
+}
+
+.button-hd > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.title-orange {
+    color: #FE8A02;
+}
+
