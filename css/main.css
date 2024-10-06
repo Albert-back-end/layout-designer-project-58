@@ -38,6 +38,7 @@ h3 {
     line-height: 1.2em;
     font-family: "Neucha";
     font-weight: 400;
+    margin: 0;
 }
 
 h1 {
@@ -51,6 +52,11 @@ h2 {
 
 h3 {
     font-size: 34px;
+}
+
+a {
+    text-decoration: none;
+    color: #42413c;
 }
 
 .container {
@@ -106,6 +112,10 @@ p {
     color: #FE8A02;
 }
 
+.title-white {
+    color: #fff;
+}
+
 .video-section {
     height: 735px;
     position: relative;
@@ -131,5 +141,31 @@ p {
 
 .navigation-section {
     background-color: #42413c;
-    height: 991px;
+    height: 891px;
+    padding-top: 100px;
+}
+
+.navigation-grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 323px);
+    gap: 30px;
+}
+
+.card-navigation {
+    background-color: #fff;
+    padding: 24px;
+}
+
+.card-nav-desc {
+    width: 302px;
+    height: 75px;
+    margin: 0;
+}
+
+.number-nav-section {
+    font-family: "Neucha";
+    font-size: 64px;
+    line-height: 1;
+    margin: 0 0 40px 0;
 }
