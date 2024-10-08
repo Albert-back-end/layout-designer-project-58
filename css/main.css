@@ -21,10 +21,29 @@ body {
     bottom: 0;
     z-index: -1;
     content: "";
-    
+
     width: 100%;
     height: 100%;
     
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    background-color: #f4f5f0;
+}
+
+.ikea-effect::before {
+    position: absolute;
+    top: 1805px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
     background-image: url(/images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,10 +78,16 @@ a {
     color: #42413c;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     position: relative;
     padding: 100px 165px;
     max-width: 1110px;
+    flex-wrap: wrap;
 }
 
 .image-and-title_header {
@@ -81,9 +106,10 @@ a {
     top: -55px;
     right: -270px;
     z-index: -1;
+    width: 100%;
 }
 
-.header_block-text {
+.desc_block-text {
     display: flex;
     gap: 30px;
 }
@@ -155,6 +181,25 @@ p {
 .card-navigation {
     background-color: #fff;
     padding: 24px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card-navigation:hover {
+    background-color: #fe8a02;
+    color: #fff;
+}
+
+.main-title-navigation {
+    margin: 0;
+    font-size: 52px;
+}
+
+.title-nav-section {
+    color: #fe8a02;
+}
+
+.card-navigation:hover .title-nav-section {
+    color: #fff;
 }
 
 .card-nav-desc {
@@ -168,4 +213,49 @@ p {
     font-size: 64px;
     line-height: 1;
     margin: 0 0 40px 0;
+    width: 64px;
+}
+
+.five-content-sect {
+    background-color: #f4f5f0;
+}
+
+.image-and-main-content {
+    display: flex;
+    gap: 30px;
+}
+
+.ikea-text-content {
+    font-family: "Neucha";
+    color: #2A2626;
+}
+
+.ikea-first-p {
+    color: #908D8B;
+    font-size: 24px;
+    margin: 0;
+}
+
+.ikea-main-title {
+    font-size: 60px;
+}
+
+.ikea-main-desc {
+    font-size: 34px;
+    width: 502px;
+    line-height: 40.2px;
+    margin-top: 30px;
+}
+
+.second-content-section-ikea {
+    margin-top: 100px;
+}
+
+.ikea-second-title-h4 {
+    font-family: "Open Sans";
+    font-size: 14px;
+    background-color: #B09A81;
+    color: #fff;
+    margin: 0;
+    padding: 5px 10px;
 }
